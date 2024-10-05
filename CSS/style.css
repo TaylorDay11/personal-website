@@ -1,0 +1,690 @@
+/*
+
+font-family: 'Megrim', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Muli', sans-serif;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Bungee Shade', cursive;
+
+pink - #ED207F
+orange/yellow - #FDBE13
+green - #94C840
+blue - #6FCCDD
+purple - #9052A0
+
+*/
+
+body{
+	background-color: #212121;
+}
+
+h1{
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 48px;
+	margin-bottom: 30px;
+	letter-spacing: .5px;
+	font-weight: 300;
+}
+
+h2{ 
+	margin: 0px;
+	margin-bottom: 35px;
+	font-size: 35px;
+	letter-spacing: .5px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #2e2e2e;
+}
+
+h3{ 
+	margin: 0px;
+	margin-bottom: 20px;
+	font-size: 30px;
+	letter-spacing: .5px;
+	font-family: 'Megrim', cursive;
+	font-weight: 300;
+	color: #2e2e2e;
+	font-weight: 700;
+}
+
+p{
+	margin: 0;
+	font-weight: 300;
+    letter-spacing: .4px;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Muli', sans-serif;
+	color: #505050;
+	margin-bottom: 30px;
+}
+
+hr{
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* Header */
+.header{
+	height: inherit;
+	width: 100%;
+}
+
+/* Logo */
+.logo{
+	float: left;
+	z-index: 100;
+	margin-top: 10px;
+	margin-left: 10%;
+	width: 120px;
+}
+
+.logo-shrink{
+	width: 55px;
+	position: fixed;
+	z-index: 101;
+	margin-top: 5px;
+}
+
+.logo-move{margin-top: 165px;}
+
+/* Layered Patterns */
+/* Background pattern from Toptal Subtle Patterns */
+
+.layer-patterns{
+	width: 100%;
+	height: 25px;
+}
+
+.layer-one{
+	background-image: url(congruent_outline.png);
+}
+
+.layer-two{
+	background-image: url(dark-embroidery.png);
+  	box-shadow: 0px -5px 20px 0px #000;
+}
+
+.layer-three{
+	background-image: url(prism.png);
+	box-shadow: 0px -5px 20px 0px #000;
+}
+
+/* Nav Bar */
+.nav-bar{
+	width: 100%;
+	height: 40px;
+	box-shadow: 0px -5px 20px 0px #000;
+	background-image: url(dark-honeycomb.png);
+}
+
+.navbar-fixed{
+	top: 0;
+    z-index: 100;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0px 5px 5px 0px #000;
+}
+
+.nav-ul{
+	height: 40px;
+	position: relative;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 10%; 
+}
+
+.nav-li{
+	text-decoration: none;
+	float: right;
+	text-align: center;
+	width: inherit;
+	color: #F8F8FF;
+	height: inherit;
+	padding: 11px 12px 11px 12px;
+	display: inline-block;
+	font-family: 'Megrim', cursive;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+    background-image: none;
+    z-index: 101;
+}
+
+.nav-ul a :hover{
+	background-color: rgba(0, 0, 0, .35);
+	box-shadow: inset 0 0 5px #000000;
+	color: #cccccc;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+#selected{
+	background-color: #F8F8FF;
+	color: #212121;
+	box-shadow: inset 0 0 10px #000000;
+}
+
+.nav-bar{
+	background-color: #58595b;
+	height: 60px;
+}
+
+.nav-bar .icon{
+	display: none;
+}
+
+/* Banner */
+/* Photo by Nagy Arnold on Unsplash */
+.banner{
+	width: 100%;
+	height: 25px;
+	top: 0;
+	/*background-image: url('../img/taylor-hershberger-home-banner-spring.jpg');*/
+	background-color: #2e2e2e;
+	background-size: cover;
+	z-index: 99;
+}
+
+/* Main Content */
+.main-content{
+	width: 80%; 
+	margin: 0 auto;
+	height: inherit;
+	background-color: #F8F8FF;
+	margin-top: 40px;
+	margin-bottom: 35px;
+	position: relative;
+	/* z-index: -1; */
+}
+
+.maincontent-margin{
+	margin-top: 95px;
+}
+
+/* Inner Content */
+.inner-content{
+	display: inline-block;
+	padding-bottom: 50px;
+	margin: 0 auto;
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+	padding-top: 50px;
+}
+
+/* Button */
+.button{
+	color: #212121;
+    border: 2px solid #212121;
+    padding: 10px 20px;
+    font-family: "Muli";
+    letter-spacing: .7px;
+}
+
+.button:hover {
+	color: #F8F8FF !important;
+	background-color: #212121;
+	cursor: pointer;
+}
+
+/* Home */
+.welcome-section{
+	width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+.page-links div{
+	margin-top: 50px;
+}
+
+.page-links{
+	margin: 0 auto;
+	width: fit-content;
+}
+
+.toolbox-link, .aboutme-link, .mywork-link {
+	display: inline-grid;
+	width: 200px;
+	margin-left:20px;
+}
+
+.page-links p{
+	margin-bottom: 0px;
+}
+
+.aboutme-link h3{color:#ED207F;}
+
+.toolbox-link h3{color:#FDBE13;}
+
+.mywork-link h3{color:#94C840;}
+
+.page-links a .arrow-hover{
+	transition: width 2s linear 1s;
+	cursor: pointer;
+}
+
+.page-links a:hover .arrow-hover{
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.home-h1{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.home-h2{
+	text-align: center;
+	font-size: 40px;
+}
+
+.home-p{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.specialties{
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 25px;
+}
+
+/* About Page */
+.leadershiplink{color:#ED207F !important;}
+
+.resumelink{color:#ED207F !important;}
+
+/* My Work Page */
+.mywork-links h2{margin-bottom:10px;}
+
+.tripsaverlink{color:#ED207F !important;}
+
+.rentcontrollink{color:#FDBE13 !important;}
+
+.p5ponglink{color:#94C840 !important;}
+
+.lostinspacelink{color:#6FCCDD !important;}
+
+/* Portfolio Pages */
+#portfolio a{
+	color: #2e2e2e;
+}
+
+#portfolio a:hover{
+	color: #6FCCDD;
+}
+
+#portfolio h1{display:inline-block;}
+
+#portfolio h3{
+	font-family:"Roboto";
+	font-weight: 400;
+	font-size:22px;
+}
+
+.author{
+	display:inline-block;
+	float:right;
+	text-align-last: right;
+}
+
+.highlights{
+	width: 650px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.highlights p{
+	padding-top: 170px;
+	font-size:14px;
+}
+
+.highlights .cultivatedpadding{
+	padding-top:220px;
+	font-size:14px;
+}
+
+.personas{
+	margin:0 auto;
+	width: fit-content;
+}
+
+.competitiveaudit{
+	margin:0 auto;
+	width: fit-content;
+}
+ 
+#coronaslogo{margin-left: 50px;}
+
+.sketches img{margin-right: 0px !important;}
+
+.sketches{
+	margin:0 auto;
+	width: fit-content;
+}
+
+#link1, #link2, #link3{color:#2e2e2e;}
+
+#link1:hover{color:#ED207F !important;}
+
+#link2:hover{color:#FDBE13 !important;}
+
+#link3:hover{color:#94C840 !important;}
+
+/* Images */
+img{max-width:100%;}
+
+.alignleft{
+	float: left;
+	margin: 0px 30px 20px 0px;
+}
+
+.alignright{
+	float: right;
+	margin: 0px 0px 20px 30px;
+}
+
+.aligncenter{
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.alignnone{
+	display:inline-block;
+	margin: 0px 30px 20px 0px;
+}
+
+.headshot{
+	margin-bottom: 0px;
+	margin: 0px 35px 20px 0px;
+}
+
+/* Footer */
+footer{
+	width: 100%;
+	background-color: #2e2e2e;
+}
+
+.outer-footer{
+	width: 100%;
+	position: relative;
+	display: block;
+	background-color: #2e2e2e;
+}
+
+.inner-footer{
+	width: fit-content;
+    margin: 0 auto;
+}
+
+.social-icon{
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+    margin-top: 7px;
+    background-size: contain;
+    margin-right: 7px;
+}
+
+#Linkedin:hover{
+	background-image: url("../img/Linkedinhovericon.png");
+	cursor: pointer;
+}
+
+#Linkedin{
+	background-image: url("../img/Linkedinicon.png");
+	background-size: contain;
+}
+
+#Github:hover{
+	background-image: url("../img/Githubhovericon.png");
+	cursor: pointer;
+}
+
+#Github{
+	background-image: url("../img/Githubicon.png");
+}
+
+#Email:hover{
+	background-image: url("../img/Emailhovericon.png");
+	cursor: pointer;
+}
+
+#Email{
+	background-image: url("../img/Emailicon.png");
+}
+
+.foot-content a{
+	color: #F8F8FF;
+}
+
+.foot-content a:hover{
+	color: #bfbfbf;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+i{margin-right:4px;}
+
+hr{color:#F8F8FF;}
+
+.footer-quote{
+	text-align: center;
+    color: #F8F8FF;
+    padding-top: 10px;
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+/* Mobile Responsive */
+
+/* Tablets Pros */
+@media screen and (max-width: 1030px){
+	.welcome-section {
+    	width: 90%;
+    	margin-right: 5%;
+    	margin-left: 5%;
+	}
+
+	.home-h1{
+		font-size: 38px;
+		margin-top: 26px;
+	}
+
+	.home-h2{font-size: 33px;}
+
+	.home-p{font-size: 18px;}
+}
+
+/* Tablets */
+@media screen and (max-width: 770px){
+
+	.welcome-section {
+    	width: 100%;
+    	margin-right: 0%;
+    	margin-left: 0%;
+	}
+
+	.home-h1{
+		font-size: 33px;
+		margin-top: 0px;
+	}
+
+	h1{margin-bottom: 20px;}
+
+	.home-h2{font-size: 30px;}
+
+	h2{margin-bottom: 20px;}
+
+	.home-p{font-size: 16px;}
+
+	.toolbox-link, .aboutme-link, .mywork-link{width:90%;}
+
+	.author{
+		float:none;
+		text-align-last: left;
+	}
+
+	.highlights{width: 500px;}
+
+	.highlights p{
+		padding-top: 120px;
+		font-size: 14px;
+	}
+
+	.highlights img{width: 200px;}
+
+	.sketches img{height:200px;}
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 630px){
+	.main-content{width: 100%;}
+	
+	.inner-content{
+		width: 90%;
+		margin-right: 5%;
+    	margin-left: 5%;
+	}
+
+	.alignleft, .alignright{
+		margin:0 auto;
+		display: block;
+		float: none;
+		padding-bottom: 30px;
+	}
+
+	.alignnone{margin-right:0px;}
+
+	.home-h1{font-size: 34px;}
+
+	.home-h2{font-size: 28px;}
+
+	.home-p{font-size: 20px;}
+
+	.nav-bar a {
+		display: none;
+		z-index: 1;
+	}
+  	
+  	.nav-bar a.icon {
+    	float: right;
+   	 	display: block;
+  	}
+
+  	.nav-home{margin-top: 6px;}
+
+  	.navbar-fixed .nav-home{margin-top: 0px;}
+
+  	#iconcust{
+  		color: #F8F8FF;
+   	 	margin: 6px 40px 0px 0px;
+  	}
+
+  	.nav-bar.responsive {
+  		position: inherit;
+  		z-index: 103;
+  		height: inherit;
+    	width: inherit;
+  	}
+
+  	.nav-bar.responsive a.icon {
+   		position: relative;
+   		width: 100%;
+  	}
+
+  	.icon{
+  		font-size: 30px;
+  	}
+
+  	.nav-bar.responsive a {
+  		float: none;
+    	display: block;
+    	text-align: right;
+    	width: 100%;
+    	position: relative;
+  	}
+
+  	.nav-ul{
+  		margin-right: 0;
+  	}
+
+  	.nav-ul a :hover{
+		background-color: #212121;
+		box-shadow: none;
+		color: #F8F8FF;
+		transition: 0.3s;
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	.nav-ul .icon :hover{
+		text-decoration: none !important;
+		cursor: pointer;
+	}
+
+  	.nav-li{
+  		background-color: #212121;
+  	}
+
+  	#selected {
+    	background-color: #212121;
+    	color: #F8F8FF;
+    	box-shadow: none;
+    	text-decoration: underline;
+	}
+
+	.nav-bar.responsive a.scroll-icon{
+		background-image: url(dark-honeycomb.png);
+    	z-index: -1;
+	}
+
+	.scroll-banner{
+		position: relative;
+    	margin-top: 161px;
+	}
+
+	.highlights{width: 350px;}
+
+	.highlights p{
+		padding-top: 80px;
+		font-size: 12px;
+	}
+
+	.highlights .cultivatedpadding{padding-top: 50px;}
+
+	.highlights img{
+		width: 150px;
+		padding-right:20px;
+		padding-left:20px;
+	}
+
+	#coronaslogo{
+		margin-left:80px;
+		margin-bottom:30px;
+	}
+
+	.competitiveaudit img{height:40px;}
+
+	.competitiveaudit .alignnone{
+		margin:0 auto;
+		margin-bottom:50px;
+		display: block;
+	}
+
+	.sketches img{height:170px;}
+
+}
+
+
+
+
