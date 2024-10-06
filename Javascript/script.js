@@ -1,11 +1,11 @@
-var reverse;
-var menuOpen = false;
+let reverse
+let menuOpen = false
 
 $(document).ready(function() {
-  
+
+  // shrinks logo on scroll
   $(window).scroll(function () {
-      // shrinks logo on scroll
-      /* console.log($(window).scrollTop()) */
+      
     if ($(window).scrollTop() > 74) {
         $('#nav-bar').addClass('navbar-fixed');
         $('.logo').addClass('logo-shrink');
@@ -16,8 +16,6 @@ $(document).ready(function() {
           $('.banner').addClass('scroll-banner');
           $('.logo').addClass('logo-move');
         }
-
-        /* console.log('addClass'); */
     }
     if ($(window).scrollTop() < 75) {
         $('#nav-bar').removeClass('navbar-fixed');
@@ -29,7 +27,6 @@ $(document).ready(function() {
           $('.banner').removeClass('scroll-banner');
           $('.logo').removeClass('logo-move');
         }
-        /* console.log('removeClass') */
     }
   });
 
