@@ -24,7 +24,7 @@ h1{
 	margin: 0px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 48px;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	letter-spacing: .5px;
 	font-weight: 300;
 }
@@ -322,12 +322,18 @@ a{
 	color: #6FCCDD;
 }
 
-#portfolio h1{display:inline-block;}
+#portfolio h1{
+	display:inline-block;
+}
+
+#portfolio h2{
+	margin-bottom: 30px;
+}
 
 #portfolio h3{
 	font-family:"Roboto";
 	font-weight: 400;
-	font-size:22px;
+	font-size: 25px;
 }
 
 .author{
@@ -378,6 +384,10 @@ a{
 #link2:hover{color:#FDBE13 !important;}
 
 #link3:hover{color:#94C840 !important;}
+
+#link4:hover{color:#6FCCDD !important;}
+
+#link5:hover{color:#9052A0 !important;}
 
 /* Images */
 img{max-width:100%;}
